@@ -1,0 +1,899 @@
+Overhead ╎ [+additional indent] Count File:Line; Function
+=========================================================
+    ╎1     @Base/broadcast.jl:1238; broadcasted(::Function, ::BinaryCrossEntropy, ::Array{Array{Float32,1},1}, ::SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true})
+   1╎ 1     @Base/broadcast.jl:1240; broadcasted
+    ╎35417 @Base/client.jl:484; _start()
+    ╎ 35417 @Base/client.jl:288; exec_options(::Base.JLOptions)
+  17╎  35417 @Base/Base.jl:377; include(::Module, ::String)
+    ╎   35399 /home/simonadi/Documents/projects/julia/nn/test.jl:26; run()
+    ╎    35399 /home/simonadi/Documents/projects/julia/nn/network.jl:17; train##kw
+    ╎     1     /home/simonadi/Documents/projects/julia/nn/network.jl:57; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 1     @Base/coreio.jl:4; println(::String)
+    ╎    ╎  1     @Base/strings/io.jl:73; println(::Base.TTY, ::String)
+    ╎    ╎   1     @Base/strings/io.jl:46; print(::Base.TTY, ::String, ::Char)
+    ╎    ╎    1     @Base/strings/io.jl:185; print
+    ╎    ╎     1     @Base/strings/io.jl:183; write
+    ╎    ╎    ╎ 1     @Base/stream.jl:1007; unsafe_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+    ╎    ╎    ╎  1     @Base/stream.jl:924; uv_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+   1╎    ╎    ╎   1     @Base/stream.jl:967; uv_write_async(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+    ╎     1     /home/simonadi/Documents/projects/julia/nn/network.jl:43; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 1     @Base/array.jl:1128; pop!
+    ╎    ╎  1     @Base/abstractarray.jl:302; lastindex
+    ╎    ╎   1     @Base/abstractarray.jl:267; eachindex
+    ╎    ╎    1     @Base/abstractarray.jl:95; axes1
+    ╎    ╎     1     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎ 1     @Base/tuple.jl:157; map
+    ╎    ╎    ╎  1     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎   1     @Base/range.jl:311; OneTo
+   1╎    ╎    ╎    1     @Base/promotion.jl:409; max
+   1╎     1     /home/simonadi/Documents/projects/julia/nn/network.jl:33; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎     2     /home/simonadi/Documents/projects/julia/nn/network.jl:56; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 2     @Base/coreio.jl:4; println(::String)
+    ╎    ╎  2     @Base/strings/io.jl:73; println(::Base.TTY, ::String)
+    ╎    ╎   2     @Base/strings/io.jl:46; print(::Base.TTY, ::String, ::Char)
+    ╎    ╎    1     @Base/char.jl:229; print
+    ╎    ╎     1     @Base/io.jl:647; write
+    ╎    ╎    ╎ 1     @Base/stream.jl:1045; write(::Base.TTY, ::UInt8)
+    ╎    ╎    ╎  1     @Base/io.jl:594; write
+    ╎    ╎    ╎   1     @Base/io.jl:591; unsafe_write(::Base.TTY, ::Base.RefValue{UInt8}, ::Int64)
+    ╎    ╎    ╎    1     @Base/io.jl:593; unsafe_write
+    ╎    ╎    ╎     1     @Base/stream.jl:1007; unsafe_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+    ╎    ╎    ╎    ╎ 1     @Base/stream.jl:924; uv_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+   1╎    ╎    ╎    ╎  1     @Base/stream.jl:967; uv_write_async(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+    ╎    ╎    1     @Base/strings/io.jl:185; print
+    ╎    ╎     1     @Base/strings/io.jl:183; write
+    ╎    ╎    ╎ 1     @Base/stream.jl:1007; unsafe_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+    ╎    ╎    ╎  1     @Base/stream.jl:924; uv_write(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+   1╎    ╎    ╎   1     @Base/stream.jl:967; uv_write_async(::Base.TTY, ::Ptr{UInt8}, ::UInt64)
+   2╎     15    /home/simonadi/Documents/projects/julia/nn/network.jl:32; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+   1╎    ╎ 5     @Base/broadcast.jl:820; materialize(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(compute),Tuple{Base.RefValue{Sigmoid},Array{Array{Float32,1},1}}})
+    ╎    ╎  1     @Base/broadcast.jl:840; copy
+    ╎    ╎   1     @Base/broadcast.jl:196; similar
+    ╎    ╎    1     @Base/abstractarray.jl:670; similar
+    ╎    ╎     1     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎ 1     @Base/boot.jl:422; Array
+    ╎    ╎    ╎  1     @Base/boot.jl:414; Array
+   1╎    ╎    ╎   1     @Base/boot.jl:405; Array
+    ╎    ╎  3     @Base/broadcast.jl:840; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(compute),Tuple{Base.RefValue{Sigmoid},Array{Array{Float32,1},1}}})
+    ╎    ╎   3     @Base/broadcast.jl:864; copyto!
+    ╎    ╎    3     @Base/broadcast.jl:909; copyto!
+    ╎    ╎     3     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎ 3     @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎  3     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎   3     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    3     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎     3     /home/simonadi/Documents/projects/julia/nn/activations.jl:9; compute(::Sigmoid, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎ 3     @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎  3     @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎   3     @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎    3     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎     3     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎ 3     @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎  3     @Base/boot.jl:414; Array
+   3╎    ╎    ╎    ╎    ╎   3     @Base/boot.jl:405; Array
+    ╎    ╎ 8     @Base/broadcast.jl:1238; broadcasted(::Function, ::Unit, ::Array{Array{Float32,1},1})
+   7╎    ╎  8     @Base/broadcast.jl:1240; broadcasted
+    ╎    ╎   1     @Base/broadcast.jl:179; Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Axes,F,Args} where Args<:Tuple where F where Axes(::typeof(compute), ::Tuple{Base.RefValue{Unit},Array{Array{Float32,1},1}})
+    ╎    ╎    1     @Base/broadcast.jl:179; Broadcasted
+   1╎    ╎     1     @Base/broadcast.jl:170; Broadcasted
+   1╎     23    /home/simonadi/Documents/projects/julia/nn/network.jl:36; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 3     @Base/broadcast.jl:1238; broadcasted(::Function, ::BinaryCrossEntropy, ::Array{Array{Float32,1},1}, ::SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true})
+   3╎    ╎  3     @Base/broadcast.jl:1240; broadcasted
+    ╎    ╎ 19    @Base/broadcast.jl:820; materialize(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Array{Array{Float32,1},1},SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true}}})
+   1╎    ╎  1     @Base/broadcast.jl:856; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Array{Array{Float32,1},1},SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true}}})
+    ╎    ╎  2     @Base/broadcast.jl:854; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Array{Array{Float32,1},1},SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true}}})
+    ╎    ╎   2     @Base/broadcast.jl:564; getindex
+    ╎    ╎    2     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎     2     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎ 2     /home/simonadi/Documents/projects/julia/nn/losses.jl:22; derivative(::BinaryCrossEntropy, ::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎  2     @Base/broadcast.jl:820; materialize
+   1╎    ╎    ╎   1     @Base/broadcast.jl:856; copy
+   1╎    ╎    ╎   1     @Base/broadcast.jl:855; copy
+    ╎    ╎  16    @Base/broadcast.jl:858; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Array{Array{Float32,1},1},SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true}}})
+   2╎    ╎   2     @Base/broadcast.jl:1006; copyto_nonleaf!(::Array{Array{Float32,1},1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Base.Broadcast.Extruded{Array{Array{Float32,1},1},Tuple{Bool},Tuple{Int64}},Base.Br...
+    ╎    ╎   14    @Base/broadcast.jl:1004; copyto_nonleaf!(::Array{Array{Float32,1},1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(derivative),Tuple{Base.RefValue{BinaryCrossEntropy},Base.Broadcast.Extruded{Array{Array{Float32,1},1},Tuple{Bool},Tuple{Int64}},Base.Br...
+    ╎    ╎    14    @Base/broadcast.jl:564; getindex
+    ╎    ╎     14    @Base/broadcast.jl:604; _broadcast_getindex
+   1╎    ╎    ╎ 14    @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎  13    /home/simonadi/Documents/projects/julia/nn/losses.jl:22; derivative(::BinaryCrossEntropy, ::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎   13    @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    1     @Base/broadcast.jl:256; instantiate
+    ╎    ╎    ╎     1     @Base/broadcast.jl:473; combine_axes
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:474; combine_axes
+    ╎    ╎    ╎    ╎  1     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎    ╎   1     @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎    1     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎     1     @Base/range.jl:311; OneTo
+   1╎    ╎    ╎    ╎    ╎ 1     @Base/promotion.jl:409; max
+   1╎    ╎    ╎    1     @Base/broadcast.jl:856; copy
+   1╎    ╎    ╎    1     @Base/broadcast.jl:858; copy
+   7╎    ╎    ╎    10    @Base/broadcast.jl:855; copy
+    ╎    ╎    ╎     3     @Base/broadcast.jl:196; similar(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(bce_d_unit),Tuple{Base.Broadcast.Extruded{Array{Float32,1},Tuple{Bool},Tuple{Int64}},Base.Broadcast.Extruded{Array{Float32,1},Tuple{Bool},Tuple{Int64}}}}, ::Type{Float32})
+    ╎    ╎    ╎    ╎ 3     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎  3     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎   3     @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    3     @Base/boot.jl:414; Array
+   3╎    ╎    ╎    ╎     3     @Base/boot.jl:405; Array
+  11╎     34    /home/simonadi/Documents/projects/julia/nn/network.jl:49; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 4     @Base/iterators.jl:333; iterate
+    ╎    ╎  4     @Base/iterators.jl:347; _zip_iterate_all(::Tuple{Array{Layer,1},Array{Any,1},Array{Any,1}}, ::Tuple{Tuple{},Tuple{},Tuple{}})
+   4╎    ╎   4     @Base/iterators.jl:363; _zip_iterate_interleave
+   5╎    ╎ 5     @Base/iterators.jl:300; zip(::Array{Layer,1}, ::Array{Any,1}, ::Vararg{Array{Any,1},N} where N)
+  10╎    ╎ 14    @Base/tuple.jl:81; indexed_iterate(::Tuple{Dense{Unit},Array{Float32,2},Array{Float32,1}}, ::Int64)
+   4╎    ╎  4     @Base/tuple.jl:81; indexed_iterate
+   3╎     53    /home/simonadi/Documents/projects/julia/nn/network.jl:45; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+   1╎    ╎ 1     @Base/arraymath.jl:55; /(::Array{Float32,1}, ::Int64)
+    ╎    ╎ 49    /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:40; bias_error(::Dense{Sigmoid}, ::Array{Array{Float32,1},1})
+    ╎    ╎  49    /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:157; mean
+    ╎    ╎   49    /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:157; #mean#4
+    ╎    ╎    49    /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:160; _mean
+    ╎    ╎     49    @Base/reducedim.jl:652; sum
+    ╎    ╎    ╎ 49    @Base/reducedim.jl:652; #sum#583
+    ╎    ╎    ╎  49    @Base/reducedim.jl:656; _sum
+    ╎    ╎    ╎   49    @Base/reducedim.jl:657; _sum
+    ╎    ╎    ╎    49    @Base/reducedim.jl:307; mapreduce
+    ╎    ╎    ╎     49    @Base/reducedim.jl:307; #mapreduce#580
+    ╎    ╎    ╎    ╎ 49    @Base/reducedim.jl:312; _mapreduce_dim
+    ╎    ╎    ╎    ╎  49    @Base/reduce.jl:407; _mapreduce(::typeof(identity), ::typeof(Base.add_sum), ::IndexLinear, ::Array{Array{Float32,1},1})
+    ╎    ╎    ╎    ╎   49    @Base/reduce.jl:253; mapreduce_impl
+    ╎    ╎    ╎    ╎    1     @Base/reduce.jl:238; mapreduce_impl(::typeof(identity), ::typeof(Base.add_sum), ::Array{Array{Float32,1},1}, ::Int64, ::Int64, ::Int64)
+    ╎    ╎    ╎    ╎     1     @Base/reduce.jl:21; add_sum
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/arraymath.jl:47; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎    ╎    ╎  1     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:597; _broadcast_getindex
+   1╎    ╎    ╎    ╎    ╎    ╎    ╎   1     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    48    @Base/reduce.jl:239; mapreduce_impl(::typeof(identity), ::typeof(Base.add_sum), ::Array{Array{Float32,1},1}, ::Int64, ::Int64, ::Int64)
+    ╎    ╎    ╎    ╎     48    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎ 48    @Base/reduce.jl:241; macro expansion
+    ╎    ╎    ╎    ╎    ╎  48    @Base/reduce.jl:21; add_sum
+    ╎    ╎    ╎    ╎    ╎   5     @Base/arraymath.jl:45; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎    ╎    5     @Base/indices.jl:169; promote_shape
+    ╎    ╎    ╎    ╎    ╎     5     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎    ╎    ╎    ╎ 5     @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎    ╎    ╎  5     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎    ╎    ╎   5     @Base/range.jl:311; OneTo
+   5╎    ╎    ╎    ╎    ╎    ╎    5     @Base/promotion.jl:409; max
+   1╎    ╎    ╎    ╎    ╎   43    @Base/arraymath.jl:47; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎    ╎    42    @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎    ╎    ╎     42    @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎    ╎    ╎ 42    @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎    ╎    ╎  12    @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎    ╎    ╎   12    @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎    ╎    ╎    12    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎    ╎     12    @Base/broadcast.jl:910; macro expansion
+   2╎    ╎    ╎    ╎    ╎    ╎    ╎ 2     @Base/array.jl:826; setindex!
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 10    @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  2     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   2     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:597; _broadcast_getindex
+   2╎    ╎    ╎    ╎    ╎    ╎    ╎     2     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  8     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   8     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   8╎    ╎    ╎    ╎    ╎    ╎    ╎    8     @Base/float.jl:400; +
+    ╎    ╎    ╎    ╎    ╎    ╎  30    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎    ╎    ╎   30    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎    ╎    ╎    30    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎    ╎     30    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 30    @Base/boot.jl:414; Array
+  30╎    ╎    ╎    ╎    ╎    ╎    ╎  30    @Base/boot.jl:405; Array
+   6╎     65    /home/simonadi/Documents/projects/julia/nn/network.jl:42; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 5     @Base/broadcast.jl:1238; broadcasted(::Function, ::Dense{Unit}, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1})
+   5╎    ╎  5     @Base/broadcast.jl:1240; broadcasted
+   1╎    ╎ 54    @Base/broadcast.jl:820; materialize(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(layer_error),Tuple{Base.RefValue{Dense{Unit}},Array{Array{Float32,1},1},Array{Array{Float32,1},1}}})
+   2╎    ╎  2     /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:36; layer_error(::Dense{Unit}, ::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎  51    @Base/broadcast.jl:840; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(layer_error),Tuple{Base.RefValue{Dense{Unit}},Array{Array{Float32,1},1},Array{Array{Float32,1},1}}})
+    ╎    ╎   1     @Base/broadcast.jl:196; similar
+    ╎    ╎    1     @Base/abstractarray.jl:670; similar
+    ╎    ╎     1     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎ 1     @Base/boot.jl:422; Array
+    ╎    ╎    ╎  1     @Base/boot.jl:414; Array
+   1╎    ╎    ╎   1     @Base/boot.jl:405; Array
+    ╎    ╎   50    @Base/broadcast.jl:864; copyto!
+    ╎    ╎    50    @Base/broadcast.jl:909; copyto!
+    ╎    ╎     50    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎ 50    @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎  50    @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎   50    @Base/broadcast.jl:604; _broadcast_getindex
+   1╎    ╎    ╎    50    @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   2╎    ╎    ╎     49    /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:36; layer_error(::Dense{Sigmoid}, ::Array{Float32,1}, ::Array{Float32,1})
+   1╎    ╎    ╎    ╎ 5     /home/simonadi/Documents/projects/julia/nn/activations.jl:14; derivative(::Sigmoid, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎  4     @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎   4     @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎     2     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎    ╎ 2     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎  2     @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎   2     @Base/boot.jl:414; Array
+   2╎    ╎    ╎    ╎    ╎    2     @Base/boot.jl:405; Array
+    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎     2     @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎    ╎ 2     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎  2     @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    ╎   2     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎     2     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎    ╎    ╎ 2     /home/simonadi/Documents/projects/julia/nn/activations.jl:11; sigmoid_d_f
+   1╎    ╎    ╎    ╎    ╎    ╎  1     @Base/special/exp.jl:123; exp(::Float32)
+    ╎    ╎    ╎    ╎    ╎    ╎  1     @Base/special/exp.jl:117; exp(::Float32)
+   1╎    ╎    ╎    ╎    ╎    ╎   1     @Base/float.jl:402; -
+    ╎    ╎    ╎    ╎ 42    @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎  2     @Base/broadcast.jl:256; instantiate
+    ╎    ╎    ╎    ╎   2     @Base/broadcast.jl:473; combine_axes
+    ╎    ╎    ╎    ╎    2     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎    ╎     2     @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎    ╎ 2     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎    ╎  2     @Base/range.jl:311; OneTo
+   2╎    ╎    ╎    ╎    ╎   2     @Base/promotion.jl:409; max
+    ╎    ╎    ╎    ╎  40    @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎   13    @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:892; preprocess
+   1╎    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:885; broadcast_unalias
+    ╎    ╎    ╎    ╎    12    @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎     4     @Base/simdloop.jl:78; macro expansion
+   4╎    ╎    ╎    ╎    ╎ 4     @Base/int.jl:53; +
+    ╎    ╎    ╎    ╎     8     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎ 8     @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    ╎  3     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎    ╎   3     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    3     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎     3     @Base/broadcast.jl:597; _broadcast_getindex
+   3╎    ╎    ╎    ╎    ╎    ╎ 3     @Base/array.jl:788; getindex
+   5╎    ╎    ╎    ╎    ╎  5     @Base/array.jl:826; setindex!
+    ╎    ╎    ╎    ╎   27    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎    27    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎     27    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎ 27    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎  27    @Base/boot.jl:414; Array
+  27╎    ╎    ╎    ╎    ╎   27    @Base/boot.jl:405; Array
+    ╎     713   /home/simonadi/Documents/projects/julia/nn/network.jl:50; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+   1╎    ╎ 5     /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:46; update(::Dense{Unit}, ::Array{Float32,2}, ::Array{Float32,1}, ::Float64)
+    ╎    ╎  2     @Base/arraymath.jl:52; *(::Float64, ::Array{Float32,1})
+    ╎    ╎   2     @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    2     @Base/broadcast.jl:820; materialize
+    ╎    ╎     2     @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎ 2     @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎  2     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎   2     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    2     @Base/boot.jl:422; Array
+    ╎    ╎    ╎     2     @Base/boot.jl:414; Array
+   2╎    ╎    ╎    ╎ 2     @Base/boot.jl:405; Array
+    ╎    ╎  2     @Base/arraymath.jl:39; -(::Array{Float32,1}, ::Array{Float64,1})
+    ╎    ╎   2     @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    2     @Base/broadcast.jl:820; materialize
+    ╎    ╎     2     @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎ 1     @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎  1     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎   1     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    1     @Base/boot.jl:422; Array
+    ╎    ╎    ╎     1     @Base/boot.jl:414; Array
+   1╎    ╎    ╎    ╎ 1     @Base/boot.jl:405; Array
+    ╎    ╎    ╎ 1     @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎  1     @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎   1     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    1     @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎     1     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎   1     @Base/promotion.jl:313; -
+    ╎    ╎    ╎    ╎    1     @Base/promotion.jl:282; promote
+    ╎    ╎    ╎    ╎     1     @Base/promotion.jl:259; _promote
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/number.jl:7; convert
+   1╎    ╎    ╎    ╎    ╎  1     @Base/float.jl:255; Float64
+    ╎    ╎ 13    @Base/iterators.jl:334; iterate(::Base.Iterators.Zip{Tuple{Array{Layer,1},Array{Any,1},Array{Any,1}}}, ::Tuple{Int64,Int64,Int64})
+    ╎    ╎  13    @Base/iterators.jl:347; _zip_iterate_all
+  13╎    ╎   13    @Base/iterators.jl:363; _zip_iterate_interleave
+    ╎    ╎ 695   /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:44; update(::Dense{Unit}, ::Array{Float32,2}, ::Array{Float32,1}, ::Float64)
+    ╎    ╎  178   @Base/array.jl:826; setindex!
+    ╎    ╎   178   @Base/array.jl:533; convert
+    ╎    ╎    178   @Base/array.jl:541; Array
+    ╎    ╎     34    @Base/boot.jl:415; Array
+  34╎    ╎    ╎ 34    @Base/boot.jl:407; Array
+    ╎    ╎     144   @Base/multidimensional.jl:962; copyto!(::Array{Float32,2}, ::Array{Float64,2})
+  35╎    ╎    ╎ 144   @Base/array.jl:826; setindex!
+    ╎    ╎    ╎  109   @Base/number.jl:7; convert
+ 109╎    ╎    ╎   109   @Base/float.jl:251; Float32
+    ╎    ╎  247   @Base/arraymath.jl:52; *(::Float64, ::Array{Float32,2})
+    ╎    ╎   247   @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    247   @Base/broadcast.jl:820; materialize
+    ╎    ╎     247   @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎ 47    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎  47    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎   47    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    47    @Base/boot.jl:422; Array
+    ╎    ╎    ╎     47    @Base/boot.jl:415; Array
+  47╎    ╎    ╎    ╎ 47    @Base/boot.jl:407; Array
+    ╎    ╎    ╎ 200   @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎  1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎   1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎     1     @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎  1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎   1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎  199   @Base/broadcast.jl:909; copyto!
+   1╎    ╎    ╎   1     @Base/simdloop.jl:79; macro expansion
+    ╎    ╎    ╎   2     @Base/simdloop.jl:75; macro expansion
+   2╎    ╎    ╎    2     @Base/int.jl:49; <
+    ╎    ╎    ╎   4     @Base/simdloop.jl:78; macro expansion
+   4╎    ╎    ╎    4     @Base/int.jl:53; +
+    ╎    ╎    ╎   192   @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    192   @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎     16    @Base/multidimensional.jl:545; setindex!
+  16╎    ╎    ╎    ╎ 16    @Base/array.jl:828; setindex!
+    ╎    ╎    ╎     176   @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎ 2     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎  2     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎   2     @Base/broadcast.jl:628; _getindex
+    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎     2     @Base/multidimensional.jl:543; getindex
+   2╎    ╎    ╎    ╎    ╎ 2     @Base/array.jl:789; getindex
+    ╎    ╎    ╎    ╎ 174   @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎  174   @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎   174   @Base/promotion.jl:312; *
+  65╎    ╎    ╎    ╎    65    @Base/float.jl:405; *
+    ╎    ╎    ╎    ╎    109   @Base/promotion.jl:282; promote
+    ╎    ╎    ╎    ╎     109   @Base/promotion.jl:259; _promote
+    ╎    ╎    ╎    ╎    ╎ 109   @Base/number.jl:7; convert
+ 109╎    ╎    ╎    ╎    ╎  109   @Base/float.jl:255; Float64
+    ╎    ╎  270   @Base/arraymath.jl:39; -(::Array{Float32,2}, ::Array{Float64,2})
+    ╎    ╎   270   @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    270   @Base/broadcast.jl:820; materialize
+    ╎    ╎     270   @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎ 18    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎  18    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎   18    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    18    @Base/boot.jl:422; Array
+    ╎    ╎    ╎     18    @Base/boot.jl:415; Array
+  18╎    ╎    ╎    ╎ 18    @Base/boot.jl:407; Array
+    ╎    ╎    ╎ 252   @Base/broadcast.jl:864; copyto!
+   1╎    ╎    ╎  1     @Base/array.jl:0; copyto!
+   1╎    ╎    ╎  1     @Base/simdloop.jl:0; copyto!
+    ╎    ╎    ╎  1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎   1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎     1     @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎  1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎   1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎  249   @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎   6     @Base/simdloop.jl:78; macro expansion
+   6╎    ╎    ╎    6     @Base/int.jl:53; +
+    ╎    ╎    ╎   243   @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    243   @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎     65    @Base/multidimensional.jl:545; setindex!
+  65╎    ╎    ╎    ╎ 65    @Base/array.jl:828; setindex!
+    ╎    ╎    ╎     178   @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎ 3     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎  3     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎   3     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    3     @Base/multidimensional.jl:543; getindex
+   3╎    ╎    ╎    ╎     3     @Base/array.jl:789; getindex
+    ╎    ╎    ╎    ╎ 175   @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎  175   @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎   175   @Base/promotion.jl:313; -
+    ╎    ╎    ╎    ╎    47    @Base/promotion.jl:282; promote
+    ╎    ╎    ╎    ╎     47    @Base/promotion.jl:259; _promote
+    ╎    ╎    ╎    ╎    ╎ 47    @Base/number.jl:7; convert
+  47╎    ╎    ╎    ╎    ╎  47    @Base/float.jl:255; Float64
+ 128╎    ╎    ╎    ╎    128   @Base/float.jl:403; -
+   1╎     1208  /home/simonadi/Documents/projects/julia/nn/network.jl:46; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+   1╎    ╎ 1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:454; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎ 1     @Base/array.jl:764; iterate
+   1╎    ╎  1     @Base/array.jl:221; length
+   5╎    ╎ 1205  /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:25; input_error(::Dense{Unit}, ::Array{Array{Float32,1},1})
+    ╎    ╎  2     @Base/array.jl:130; vect
+    ╎    ╎   2     @Base/array.jl:657; _array_for
+    ╎    ╎    2     @Base/abstractarray.jl:670; similar
+    ╎    ╎     2     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎ 2     @Base/boot.jl:414; Array
+   2╎    ╎    ╎  2     @Base/boot.jl:405; Array
+    ╎    ╎  1198  @Base/broadcast.jl:820; materialize
+    ╎    ╎   1198  @Base/broadcast.jl:840; copy
+    ╎    ╎    1     @Base/broadcast.jl:196; similar
+    ╎    ╎     1     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎ 1     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎  1     @Base/boot.jl:422; Array
+    ╎    ╎    ╎   1     @Base/boot.jl:414; Array
+   1╎    ╎    ╎    1     @Base/boot.jl:405; Array
+    ╎    ╎    1197  @Base/broadcast.jl:864; copyto!
+    ╎    ╎     1197  @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎ 1197  @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎  1197  @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎   1197  @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    1     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎     1     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:628; _getindex
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:597; _broadcast_getindex
+   1╎    ╎    ╎    ╎   1     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    1196  @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎     1196  @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎ 1196  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:87; *
+   1╎    ╎    ╎    ╎  1     @Base/array.jl:154; size
+    ╎    ╎    ╎    ╎  25    @Base/abstractarray.jl:628; similar
+    ╎    ╎    ╎    ╎   25    @Base/array.jl:361; similar
+    ╎    ╎    ╎    ╎    25    @Base/boot.jl:414; Array
+  25╎    ╎    ╎    ╎     25    @Base/boot.jl:405; Array
+    ╎    ╎    ╎    ╎  1170  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:208; mul!
+    ╎    ╎    ╎    ╎   1170  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:97; mul!
+    ╎    ╎    ╎    ╎    1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:468; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎    ╎    ╎     1     @Base/promotion.jl:288; promote
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/promotion.jl:266; _promote
+    ╎    ╎    ╎    ╎    ╎  1     @Base/number.jl:7; convert
+   1╎    ╎    ╎    ╎    ╎   1     @Base/float.jl:66; Float32
+   1╎    ╎    ╎    ╎    2     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:454; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎    ╎    ╎     1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:605; lapack_size
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/char.jl:208; ==
+   1╎    ╎    ╎    ╎    ╎  1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎    1167  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:470; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+   1╎    ╎    ╎    ╎     1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:583; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+   1╎    ╎    ╎    ╎     1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:577; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+1163╎    ╎    ╎    ╎     1165  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:587; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/essentials.jl:390; cconvert
+    ╎    ╎    ╎    ╎    ╎  1     @Base/refpointer.jl:63; convert
+   1╎    ╎    ╎    ╎    ╎   1     @Base/refvalue.jl:8; RefValue
+   1╎    ╎    ╎    ╎    ╎ 1     @Base/promotion.jl:409; max
+    ╎     2017  /home/simonadi/Documents/projects/julia/nn/network.jl:31; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+   5╎    ╎ 2017  /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:21; forward(::Dense{Unit}, ::SubArray{Array{Float32,1},1,Array{Array{Float32,1},1},Tuple{UnitRange{Int64}},true})
+    ╎    ╎  2     @Base/broadcast.jl:1238; broadcasted(::Function, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(*),Tuple{Array{Array{Float32,2},1},Array{Array{Float32,1},1}}}, ::Array{Array{Float32,1},1})
+   2╎    ╎   2     @Base/broadcast.jl:1240; broadcasted
+   3╎    ╎  10    @Base/broadcast.jl:1238; broadcasted
+   7╎    ╎   7     @Base/broadcast.jl:1240; broadcasted(::Base.Broadcast.DefaultArrayStyle{1}, ::Function, ::Array{Array{Float32,2},1}, ::Array{Array{Float32,1},1})
+    ╎    ╎  2000  @Base/broadcast.jl:820; materialize(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(+),Tuple{Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(*),Tuple{Array{Array{Float32,2},1},Array{Array{Float32,1},1}}},Array{Array{Float32,1},1}}})
+    ╎    ╎   732   @Base/broadcast.jl:840; copy
+    ╎    ╎    1     @Base/broadcast.jl:196; similar
+    ╎    ╎     1     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎ 1     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎  1     @Base/boot.jl:422; Array
+    ╎    ╎    ╎   1     @Base/boot.jl:414; Array
+   1╎    ╎    ╎    1     @Base/boot.jl:405; Array
+    ╎    ╎    731   @Base/broadcast.jl:864; copyto!
+    ╎    ╎     731   @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎ 1     @Base/simdloop.jl:75; macro expansion
+   1╎    ╎    ╎  1     @Base/int.jl:49; <
+    ╎    ╎    ╎ 730   @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎  730   @Base/broadcast.jl:910; macro expansion
+   1╎    ╎    ╎   1     @Base/array.jl:826; setindex!
+    ╎    ╎    ╎   729   @Base/broadcast.jl:564; getindex
+   1╎    ╎    ╎    1     @Base/array.jl:0; _broadcast_getindex
+    ╎    ╎    ╎    17    @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎     17    @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   1╎    ╎    ╎    ╎ 1     @Base/arraymath.jl:44; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎ 16    @Base/arraymath.jl:47; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎  16    @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎    ╎   16    @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎    16    @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎     3     @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎    ╎ 3     @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎    ╎  3     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎   3     @Base/broadcast.jl:910; macro expansion
+   3╎    ╎    ╎    ╎    ╎    3     @Base/array.jl:826; setindex!
+    ╎    ╎    ╎    ╎     13    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎    ╎ 13    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎    ╎  13    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎   13    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎    13    @Base/boot.jl:414; Array
+  13╎    ╎    ╎    ╎    ╎     13    @Base/boot.jl:405; Array
+    ╎    ╎    ╎    711   @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎     711   @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:628; _getindex
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:597; _broadcast_getindex
+   1╎    ╎    ╎    ╎   1     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎ 710   @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎  710   @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎   710   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:47; *
+   1╎    ╎    ╎    ╎    1     @Base/array.jl:154; size
+    ╎    ╎    ╎    ╎    3     @Base/abstractarray.jl:628; similar
+    ╎    ╎    ╎    ╎     3     @Base/array.jl:361; similar
+    ╎    ╎    ╎    ╎    ╎ 3     @Base/boot.jl:414; Array
+   3╎    ╎    ╎    ╎    ╎  3     @Base/boot.jl:405; Array
+    ╎    ╎    ╎    ╎    706   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:208; mul!
+    ╎    ╎    ╎    ╎     706   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:66; mul!
+   1╎    ╎    ╎    ╎    ╎ 1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:0; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎    ╎    ╎    ╎ 1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:455; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎    ╎    ╎    ╎  1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎   1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎    ╎ 704   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:470; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+   1╎    ╎    ╎    ╎    ╎  1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:594; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+ 702╎    ╎    ╎    ╎    ╎  703   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:587; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+   1╎    ╎    ╎    ╎    ╎   1     @Base/promotion.jl:409; max
+    ╎    ╎   1268  @Base/broadcast.jl:840; copy(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(+),Tuple{Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(*),Tuple{Array{Array{Float32,2},1},SubArray{Array{Float32,1},1,Array{Array{Float32,1},1}...
+    ╎    ╎    1268  @Base/broadcast.jl:864; copyto!
+    ╎    ╎     1268  @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎ 1     @Base/simdloop.jl:75; macro expansion
+   1╎    ╎    ╎  1     @Base/int.jl:49; <
+    ╎    ╎    ╎ 1267  @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎  1267  @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎   1267  @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    24    @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎     24    @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎ 24    @Base/arraymath.jl:47; +(::Array{Float32,1}, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎  24    @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎    ╎   24    @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    ╎    24    @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎    ╎     6     @Base/broadcast.jl:864; copyto!
+   1╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:0; copyto!
+    ╎    ╎    ╎    ╎    ╎ 5     @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎    ╎  5     @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎    ╎   5     @Base/broadcast.jl:910; macro expansion
+   1╎    ╎    ╎    ╎    ╎    1     @Base/array.jl:826; setindex!
+    ╎    ╎    ╎    ╎    ╎    4     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎    ╎     2     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    ╎ 2     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎    ╎  2     @Base/broadcast.jl:597; _broadcast_getindex
+   2╎    ╎    ╎    ╎    ╎    ╎   2     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    ╎     2     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    ╎ 2     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   2╎    ╎    ╎    ╎    ╎    ╎  2     @Base/float.jl:400; +
+    ╎    ╎    ╎    ╎     18    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎    ╎ 18    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎    ╎  18    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎    ╎   18    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    ╎    18    @Base/boot.jl:414; Array
+  18╎    ╎    ╎    ╎    ╎     18    @Base/boot.jl:405; Array
+    ╎    ╎    ╎    1243  @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎     1243  @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:628; _getindex
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎     1     @Base/subarray.jl:269; getindex
+   1╎    ╎    ╎    ╎    ╎ 1     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎ 1242  @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎  1242  @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎   1242  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:47; *
+   1╎    ╎    ╎    ╎    1     @Base/array.jl:154; size
+    ╎    ╎    ╎    ╎    8     @Base/abstractarray.jl:628; similar
+    ╎    ╎    ╎    ╎     8     @Base/array.jl:361; similar
+    ╎    ╎    ╎    ╎    ╎ 8     @Base/boot.jl:414; Array
+   8╎    ╎    ╎    ╎    ╎  8     @Base/boot.jl:405; Array
+    ╎    ╎    ╎    ╎    1233  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:208; mul!
+    ╎    ╎    ╎    ╎     1233  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:66; mul!
+   1╎    ╎    ╎    ╎    ╎ 1     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:0; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+    ╎    ╎    ╎    ╎    ╎ 1232  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/matmul.jl:470; gemv!(::Array{Float32,1}, ::Char, ::Array{Float32,2}, ::Array{Float32,1}, ::Bool, ::Bool)
+1231╎    ╎    ╎    ╎    ╎  1232  /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/blas.jl:587; gemv!(::Char, ::Float32, ::Array{Float32,2}, ::Array{Float32,1}, ::Float32, ::Array{Float32,1})
+    ╎    ╎    ╎    ╎    ╎   1     @Base/essentials.jl:390; cconvert
+    ╎    ╎    ╎    ╎    ╎    1     @Base/refpointer.jl:63; convert
+    ╎    ╎    ╎    ╎    ╎     1     @Base/refvalue.jl:8; RefValue
+    ╎    ╎    ╎    ╎    ╎    ╎ 1     @Base/char.jl:180; convert
+    ╎    ╎    ╎    ╎    ╎    ╎  1     @Base/char.jl:171; Int8
+    ╎    ╎    ╎    ╎    ╎    ╎   1     @Base/int.jl:434; >>>
+   1╎    ╎    ╎    ╎    ╎    ╎    1     @Base/int.jl:426; >>>
+   2╎     31266 /home/simonadi/Documents/projects/julia/nn/network.jl:44; train(::Network, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1}; epochs::Int64, batch_size::Int64)
+    ╎    ╎ 1     @Base/array.jl:920; push!
+   1╎    ╎  1     @Base/array.jl:871; _growend!
+    ╎    ╎ 31263 /home/simonadi/Documents/projects/julia/nn/layers/dense.jl:29; weights_error(::Dense{Sigmoid}, ::Array{Array{Float32,1},1}, ::Array{Array{Float32,1},1})
+   1╎    ╎  31263 /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:42; mean
+    ╎    ╎   100   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:74; mean(::typeof(identity), ::Base.Generator{Base.Iterators.Zip{Tuple{Array{Array{Float32,1},1},Array{Array{Float32,1},1}}},var"#7#8"})
+    ╎    ╎    100   @Base/arraymath.jl:55; /(::Array{Float32,2}, ::Int64)
+    ╎    ╎     100   @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎ 100   @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎  100   @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎   8     @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    8     @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎     8     @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎ 8     @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎  8     @Base/boot.jl:415; Array
+   8╎    ╎    ╎    ╎   8     @Base/boot.jl:407; Array
+    ╎    ╎    ╎   92    @Base/broadcast.jl:864; copyto!
+   1╎    ╎    ╎    1     @Base/simdloop.jl:0; copyto!
+    ╎    ╎    ╎    1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎     1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎   1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎    1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    90    @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎     24    @Base/simdloop.jl:78; macro expansion
+  24╎    ╎    ╎    ╎ 24    @Base/int.jl:53; +
+    ╎    ╎    ╎     66    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎ 66    @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎  26    @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎   2     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    2     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎     2     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 2     @Base/multidimensional.jl:543; getindex
+   2╎    ╎    ╎    ╎    ╎  2     @Base/array.jl:789; getindex
+    ╎    ╎    ╎    ╎   24    @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    24    @Base/broadcast.jl:631; _broadcast_getindex_evalf
+    ╎    ╎    ╎    ╎     24    @Base/promotion.jl:314; /
+  24╎    ╎    ╎    ╎    ╎ 24    @Base/float.jl:406; /
+    ╎    ╎    ╎    ╎  40    @Base/multidimensional.jl:545; setindex!
+  40╎    ╎    ╎    ╎   40    @Base/array.jl:828; setindex!
+    ╎    ╎   104   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:58; mean(::typeof(identity), ::Base.Generator{Base.Iterators.Zip{Tuple{Array{Array{Float32,1},1},Array{Array{Float32,1},1}}},var"#7#8"})
+    ╎    ╎    104   @Base/generator.jl:47; iterate
+    ╎    ╎     104   none:0; #7
+    ╎    ╎    ╎ 104   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:253; *
+    ╎    ╎    ╎  104   @Base/broadcast.jl:758; broadcast(::typeof(*), ::Array{Float32,1}, ::LinearAlgebra.Transpose{Float32,Array{Float32,1}})
+    ╎    ╎    ╎   104   @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    1     @Base/broadcast.jl:256; instantiate
+    ╎    ╎    ╎     1     @Base/broadcast.jl:473; combine_axes
+    ╎    ╎    ╎    ╎ 1     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎    ╎  1     @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎   1     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎    1     @Base/range.jl:311; OneTo
+   1╎    ╎    ╎    ╎     1     @Base/promotion.jl:409; max
+    ╎    ╎    ╎    103   @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎     20    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎ 20    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎  20    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎   20    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    20    @Base/boot.jl:415; Array
+  20╎    ╎    ╎    ╎     20    @Base/boot.jl:407; Array
+    ╎    ╎    ╎     83    @Base/broadcast.jl:864; copyto!
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎    ╎ 1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎    ╎  1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎ 82    @Base/broadcast.jl:909; copyto!
+   1╎    ╎    ╎    ╎  1     @Base/simdloop.jl:79; macro expansion
+    ╎    ╎    ╎    ╎  3     @Base/simdloop.jl:75; macro expansion
+   3╎    ╎    ╎    ╎   3     @Base/int.jl:49; <
+    ╎    ╎    ╎    ╎  21    @Base/simdloop.jl:78; macro expansion
+  21╎    ╎    ╎    ╎   21    @Base/int.jl:53; +
+    ╎    ╎    ╎    ╎  57    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎   57    @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    13    @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎     4     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 4     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   4╎    ╎    ╎    ╎    ╎  4     @Base/float.jl:404; *
+    ╎    ╎    ╎    ╎     9     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 9     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎  9     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎   9     @Base/multidimensional.jl:543; getindex
+   9╎    ╎    ╎    ╎    ╎    9     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    44    @Base/multidimensional.jl:545; setindex!
+  44╎    ╎    ╎    ╎     44    @Base/array.jl:828; setindex!
+    ╎    ╎   121   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:67; mean(::typeof(identity), ::Base.Generator{Base.Iterators.Zip{Tuple{Array{Array{Float32,1},1},Array{Array{Float32,1},1}}},var"#7#8"})
+    ╎    ╎    121   @Base/generator.jl:47; iterate
+    ╎    ╎     121   none:0; #7
+    ╎    ╎    ╎ 121   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:253; *
+    ╎    ╎    ╎  121   @Base/broadcast.jl:758; broadcast(::typeof(*), ::Array{Float32,1}, ::LinearAlgebra.Transpose{Float32,Array{Float32,1}})
+    ╎    ╎    ╎   121   @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    121   @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎     35    @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎ 35    @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎  35    @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎   35    @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    35    @Base/boot.jl:415; Array
+  35╎    ╎    ╎    ╎     35    @Base/boot.jl:407; Array
+    ╎    ╎    ╎     86    @Base/broadcast.jl:864; copyto!
+   1╎    ╎    ╎    ╎ 1     @Base/array.jl:0; copyto!
+    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    ╎  1     @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    ╎   1     @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎    1     @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎    ╎ 1     @Base/operators.jl:193; !=
+   1╎    ╎    ╎    ╎    ╎    ╎  1     @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎ 84    @Base/broadcast.jl:909; copyto!
+    ╎    ╎    ╎    ╎  2     @Base/simdloop.jl:75; macro expansion
+   2╎    ╎    ╎    ╎   2     @Base/int.jl:49; <
+    ╎    ╎    ╎    ╎  31    @Base/simdloop.jl:78; macro expansion
+  31╎    ╎    ╎    ╎   31    @Base/int.jl:53; +
+    ╎    ╎    ╎    ╎  51    @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎   51    @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    8     @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎     4     @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 4     @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎  4     @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎   4     @Base/multidimensional.jl:543; getindex
+   4╎    ╎    ╎    ╎    ╎    4     @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎     4     @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 4     @Base/broadcast.jl:631; _broadcast_getindex_evalf
+   4╎    ╎    ╎    ╎    ╎  4     @Base/float.jl:404; *
+    ╎    ╎    ╎    ╎    43    @Base/multidimensional.jl:545; setindex!
+  43╎    ╎    ╎    ╎     43    @Base/array.jl:828; setindex!
+    ╎    ╎   11971 /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:72; mean(::typeof(identity), ::Base.Generator{Base.Iterators.Zip{Tuple{Array{Array{Float32,1},1},Array{Array{Float32,1},1}}},var"#7#8"})
+    ╎    ╎    18    @Base/generator.jl:44; iterate
+    ╎    ╎     18    @Base/iterators.jl:334; iterate
+   3╎    ╎    ╎ 3     @Base/Base.jl:33; getproperty
+    ╎    ╎    ╎ 15    @Base/iterators.jl:343; _zip_iterate_all
+    ╎    ╎    ╎  2     @Base/iterators.jl:353; _zip_iterate_some
+    ╎    ╎    ╎   2     @Base/iterators.jl:351; _zip_iterate_some
+    ╎    ╎    ╎    2     @Base/array.jl:764; iterate
+   2╎    ╎    ╎     2     @Base/array.jl:788; getindex
+    ╎    ╎    ╎  13    @Base/iterators.jl:351; _zip_iterate_some
+   3╎    ╎    ╎   3     @Base/tuple.jl:24; getindex
+   2╎    ╎    ╎   10    @Base/array.jl:764; iterate
+   3╎    ╎    ╎    3     @Base/array.jl:221; length
+    ╎    ╎    ╎    5     @Base/int.jl:416; <
+   5╎    ╎    ╎     5     @Base/bool.jl:40; &
+    ╎    ╎    11953 @Base/generator.jl:47; iterate
+    ╎    ╎     11953 none:0; #7
+    ╎    ╎    ╎ 3     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:149; transpose
+    ╎    ╎    ╎  3     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:96; Transpose
+   3╎    ╎    ╎   3     /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:70; Transpose
+    ╎    ╎    ╎ 11950 /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:253; *
+   5╎    ╎    ╎  5     @Base/simdloop.jl:0; broadcast(::typeof(*), ::Array{Float32,1}, ::LinearAlgebra.Transpose{Float32,Array{Float32,1}})
+   5╎    ╎    ╎  11945 @Base/broadcast.jl:758; broadcast(::typeof(*), ::Array{Float32,1}, ::LinearAlgebra.Transpose{Float32,Array{Float32,1}})
+    ╎    ╎    ╎   11940 @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎    22    @Base/broadcast.jl:256; instantiate
+    ╎    ╎    ╎     22    @Base/broadcast.jl:473; combine_axes
+    ╎    ╎    ╎    ╎ 8     @Base/abstractarray.jl:75; axes
+    ╎    ╎    ╎    ╎  8     @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎   8     @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎    8     @Base/range.jl:311; OneTo
+   8╎    ╎    ╎    ╎     8     @Base/promotion.jl:409; max
+    ╎    ╎    ╎    ╎ 14    @Base/broadcast.jl:474; combine_axes
+    ╎    ╎    ╎    ╎  14    /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:173; axes
+    ╎    ╎    ╎    ╎   14    @Base/abstractarray.jl:75; axes
+   1╎    ╎    ╎    ╎    1     @Base/array.jl:155; size
+    ╎    ╎    ╎    ╎    13    @Base/tuple.jl:157; map
+    ╎    ╎    ╎    ╎     13    @Base/range.jl:320; OneTo
+    ╎    ╎    ╎    ╎    ╎ 13    @Base/range.jl:311; OneTo
+  13╎    ╎    ╎    ╎    ╎  13    @Base/promotion.jl:409; max
+    ╎    ╎    ╎    11918 @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎     3605  @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    ╎ 3605  @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎    ╎  3605  @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎   3605  @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎    3605  @Base/boot.jl:415; Array
+3605╎    ╎    ╎    ╎     3605  @Base/boot.jl:407; Array
+    ╎    ╎    ╎     8313  @Base/broadcast.jl:864; copyto!
+  27╎    ╎    ╎    ╎ 27    @Base/array.jl:0; copyto!
+    ╎    ╎    ╎    ╎ 117   @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎    ╎  117   @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎   117   @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎    44    @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎     1     @Base/broadcast.jl:885; broadcast_unalias
+    ╎    ╎    ╎    ╎    ╎ 1     @Base/abstractarray.jl:1154; unalias
+   1╎    ╎    ╎    ╎    ╎  1     @Base/abstractarray.jl:1188; mightalias
+    ╎    ╎    ╎    ╎     43    @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    ╎ 43    @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    ╎  43    @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎   43    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎    43    @Base/operators.jl:193; !=
+  43╎    ╎    ╎    ╎    ╎     43    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎    73    @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎     73    @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎    ╎ 73    @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    ╎  73    @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    ╎   73    @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎    73    @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎     73    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎    ╎ 73    @Base/operators.jl:193; !=
+  73╎    ╎    ╎    ╎    ╎    ╎  73    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎ 8169  @Base/broadcast.jl:909; copyto!
+   9╎    ╎    ╎    ╎  9     @Base/int.jl:0; macro expansion
+  27╎    ╎    ╎    ╎  38    @Base/simdloop.jl:79; macro expansion
+    ╎    ╎    ╎    ╎   11    @Base/multidimensional.jl:347; iterate
+    ╎    ╎    ╎    ╎    5     @Base/multidimensional.jl:362; __inc
+   5╎    ╎    ╎    ╎     5     @Base/int.jl:53; +
+    ╎    ╎    ╎    ╎    6     @Base/multidimensional.jl:361; __inc
+   6╎    ╎    ╎    ╎     6     @Base/int.jl:49; <
+  16╎    ╎    ╎    ╎  213   @Base/simdloop.jl:75; macro expansion
+ 197╎    ╎    ╎    ╎   197   @Base/int.jl:49; <
+    ╎    ╎    ╎    ╎  2764  @Base/simdloop.jl:78; macro expansion
+2764╎    ╎    ╎    ╎   2764  @Base/int.jl:53; +
+    ╎    ╎    ╎    ╎  5145  @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎   5145  @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎    923   @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎     386   @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 386   @Base/broadcast.jl:631; _broadcast_getindex_evalf
+ 386╎    ╎    ╎    ╎    ╎  386   @Base/float.jl:404; *
+    ╎    ╎    ╎    ╎     537   @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 537   @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎    ╎  34    @Base/broadcast.jl:628; _getindex
+    ╎    ╎    ╎    ╎    ╎   34    @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎    34    @Base/abstractarray.jl:980; getindex
+    ╎    ╎    ╎    ╎    ╎     34    @Base/abstractarray.jl:1003; _getindex
+    ╎    ╎    ╎    ╎    ╎    ╎ 34    /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/LinearAlgebra/src/adjtrans.jl:177; getindex
+   8╎    ╎    ╎    ╎    ╎    ╎  8     @Base/int.jl:53; getindex
+  26╎    ╎    ╎    ╎    ╎    ╎  26    @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    ╎  503   @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎   503   @Base/multidimensional.jl:543; getindex
+   4╎    ╎    ╎    ╎    ╎    4     @Base/array.jl:0; getindex
+ 499╎    ╎    ╎    ╎    ╎    499   @Base/array.jl:788; getindex
+    ╎    ╎    ╎    ╎    4222  @Base/multidimensional.jl:545; setindex!
+4222╎    ╎    ╎    ╎     4222  @Base/array.jl:828; setindex!
+   1╎    ╎   18966 /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.4/Statistics/src/Statistics.jl:70; mean(::typeof(identity), ::Base.Generator{Base.Iterators.Zip{Tuple{Array{Array{Float32,1},1},Array{Array{Float32,1},1}}},var"#7#8"})
+   3╎    ╎    3     @Base/simdloop.jl:0; +(::Array{Float32,2}, ::Array{Float32,2})
+   4╎    ╎    4     @Base/arraymath.jl:44; +(::Array{Float32,2}, ::Array{Float32,2})
+   1╎    ╎    18958 @Base/arraymath.jl:47; +(::Array{Float32,2}, ::Array{Float32,2})
+    ╎    ╎     18957 @Base/broadcast.jl:809; broadcast_preserving_zero_d
+    ╎    ╎    ╎ 18957 @Base/broadcast.jl:820; materialize
+    ╎    ╎    ╎  18957 @Base/broadcast.jl:840; copy
+    ╎    ╎    ╎   4430  @Base/broadcast.jl:196; similar
+    ╎    ╎    ╎    4430  @Base/abstractarray.jl:670; similar
+    ╎    ╎    ╎     4430  @Base/abstractarray.jl:671; similar
+    ╎    ╎    ╎    ╎ 4430  @Base/boot.jl:422; Array
+    ╎    ╎    ╎    ╎  4430  @Base/boot.jl:415; Array
+4430╎    ╎    ╎    ╎   4430  @Base/boot.jl:407; Array
+    ╎    ╎    ╎   14527 @Base/broadcast.jl:864; copyto!
+   1╎    ╎    ╎    1     @Base/simdloop.jl:0; copyto!
+  55╎    ╎    ╎    55    @Base/array.jl:0; copyto!
+    ╎    ╎    ╎    161   @Base/broadcast.jl:908; copyto!
+    ╎    ╎    ╎     161   @Base/broadcast.jl:891; preprocess
+    ╎    ╎    ╎    ╎ 161   @Base/broadcast.jl:894; preprocess_args
+    ╎    ╎    ╎    ╎  67    @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎   67    @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎    67    @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎     67    @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎ 13    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎  13    @Base/operators.jl:193; !=
+  13╎    ╎    ╎    ╎    ╎   13    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎    ╎ 54    @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎  54    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎   54    @Base/operators.jl:193; !=
+  54╎    ╎    ╎    ╎    ╎    54    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎  94    @Base/broadcast.jl:895; preprocess_args
+    ╎    ╎    ╎    ╎   94    @Base/broadcast.jl:892; preprocess
+    ╎    ╎    ╎    ╎    94    @Base/broadcast.jl:598; extrude
+    ╎    ╎    ╎    ╎     94    @Base/broadcast.jl:553; newindexer
+    ╎    ╎    ╎    ╎    ╎ 94    @Base/broadcast.jl:554; shapeindexer
+    ╎    ╎    ╎    ╎    ╎  16    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎   16    @Base/operators.jl:193; !=
+  16╎    ╎    ╎    ╎    ╎    16    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    ╎    ╎  78    @Base/broadcast.jl:558; _newindexer
+    ╎    ╎    ╎    ╎    ╎   78    @Base/broadcast.jl:559; _newindexer
+    ╎    ╎    ╎    ╎    ╎    78    @Base/operators.jl:193; !=
+  78╎    ╎    ╎    ╎    ╎     78    @Base/promotion.jl:398; ==
+    ╎    ╎    ╎    14310 @Base/broadcast.jl:909; copyto!
+  14╎    ╎    ╎     14    @Base/int.jl:0; macro expansion
+  15╎    ╎    ╎     15    @Base/simdloop.jl:0; macro expansion
+  11╎    ╎    ╎     25    @Base/simdloop.jl:75; macro expansion
+  14╎    ╎    ╎    ╎ 14    @Base/int.jl:49; <
+  30╎    ╎    ╎     51    @Base/simdloop.jl:79; macro expansion
+    ╎    ╎    ╎    ╎ 21    @Base/multidimensional.jl:347; iterate
+    ╎    ╎    ╎    ╎  1     @Base/multidimensional.jl:361; __inc
+   1╎    ╎    ╎    ╎   1     @Base/int.jl:49; <
+    ╎    ╎    ╎    ╎  20    @Base/multidimensional.jl:362; __inc
+  20╎    ╎    ╎    ╎   20    @Base/int.jl:53; +
+    ╎    ╎    ╎     3170  @Base/simdloop.jl:78; macro expansion
+3170╎    ╎    ╎    ╎ 3170  @Base/int.jl:53; +
+    ╎    ╎    ╎     11035 @Base/simdloop.jl:77; macro expansion
+    ╎    ╎    ╎    ╎ 11035 @Base/broadcast.jl:910; macro expansion
+    ╎    ╎    ╎    ╎  3774  @Base/broadcast.jl:564; getindex
+    ╎    ╎    ╎    ╎   653   @Base/broadcast.jl:603; _broadcast_getindex
+    ╎    ╎    ╎    ╎    653   @Base/broadcast.jl:627; _getindex
+    ╎    ╎    ╎    ╎     653   @Base/broadcast.jl:597; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 653   @Base/multidimensional.jl:543; getindex
+   6╎    ╎    ╎    ╎    ╎  6     @Base/array.jl:0; getindex
+  17╎    ╎    ╎    ╎    ╎  17    @Base/int.jl:53; getindex
+ 630╎    ╎    ╎    ╎    ╎  630   @Base/array.jl:789; getindex
+    ╎    ╎    ╎    ╎   3121  @Base/broadcast.jl:604; _broadcast_getindex
+    ╎    ╎    ╎    ╎    3121  @Base/broadcast.jl:631; _broadcast_getindex_evalf
+3121╎    ╎    ╎    ╎     3121  @Base/float.jl:400; +
+    ╎    ╎    ╎    ╎  7261  @Base/multidimensional.jl:545; setindex!
+7261╎    ╎    ╎    ╎   7261  @Base/array.jl:828; setindex!
+Total snapshots: 35470
